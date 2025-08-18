@@ -13,9 +13,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      
+      # Install dependencies
+      - run: npm install
+
+      # Build your app (uses vite build)
       - run: npm run build
+
+      # Deploy preview
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_LEARN_10C9B }}
           projectId: learn-10c9b
+
