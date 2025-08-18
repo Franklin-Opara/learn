@@ -1,0 +1,48 @@
+<!-- html/notes.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Notes & Files - Learn</title>
+  <link rel="icon" href="/src/assets/favicon.png" />
+  <link rel="stylesheet" href="/src/css/styles.css" />
+</head>
+<body>
+  <nav class="top-nav">
+    <div class="nav-left">
+      <h2 class="logo">Learn</h2>
+    </div>
+    <div class="nav-right">
+      <a href="dashboard.html" class="nav-link">Dashboard</a>
+      <a href="planner.html" class="nav-link">Planner</a>
+      <a href="assignments.html" class="nav-link">Assignments</a>
+      <a href="gpa.html" class="nav-link">GPA</a>
+      <a href="me.html" class="nav-link active">Me</a>
+    </div>
+  </nav>
+
+  <main class="notes-files-page">
+    <h1>Notes</h1>
+
+
+
+    <!-- Notes Section -->
+    <section class="add-note card">
+      <h2>Create Note</h2>
+      <input type="text" class="note-title" placeholder="Note title" />
+      <textarea class="note-body" placeholder="Write your note here..."></textarea>
+      <button class="save-note-btn">Save Note</button>
+    </section>
+
+    <section class="notes-list card">
+      <h2>Your Notes</h2>
+      <ul class="note-items">
+        <!-- Notes will appear here -->
+        <li class="note-item">No notes yet.</li>
+      </ul>
+    </section>
+  </main>
+  <script type="module" src="/src/js/notes.js"></script>
+</body>
+</html>

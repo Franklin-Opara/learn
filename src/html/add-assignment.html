@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add Assignment – Learn</title>
+  <link rel="icon" href="/src/assets/favicon.png" />
+  <link rel="stylesheet" href="/src/css/styles.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="top-nav">
+    <div class="nav-left">
+      <h2 class="logo">Learn</h2>
+    </div>
+    <div class="nav-right">
+      <a href="dashboard.html" class="nav-link">Dashboard</a>
+      <a href="planner.html" class="nav-link">Planner</a>
+      <a href="assignments.html" class="nav-link active">Assignments</a>
+      <a href="gpa.html" class="nav-link">GPA</a>
+      <a href="me.html" class="nav-link">Me</a>
+    </div>
+  </nav>
+
+  <main class="page-container">
+    <h1>Add Assignment</h1>
+
+    <form class="auth-form">
+      <div class="form-group">
+        <label for="course">Course</label>
+        <select id="course" name="course" required>
+          <option value="">Select course</option>
+          <option value="CSC202">CSC202 – Algorithms</option>
+          <option value="GST203">GST203 – Entrepreneurship</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="task">Assignment Task</label>
+        <input type="text" id="task" name="task" placeholder="e.g. Write essay on modern encryption" required />
+      </div>
+
+      <div class="form-group">
+        <label for="due-date">Due Date</label>
+        <input type="date" id="due-date" name="due-date" required />
+      </div>
+
+      <div class="form-group">
+        <label for="notes">Notes (optional)</label>
+        <textarea id="notes" name="notes" rows="4" placeholder="Additional information..."></textarea>
+      </div>
+
+      <button type="submit" class="primary-btn">Save Assignment</button>
+    </form>
+  </main>
+  <script type="module" src="/src/js/assignments.js"></script>
+</body>
+</html>

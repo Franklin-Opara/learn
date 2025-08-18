@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Setup Your Profile – LEARN</title>
+  <link rel="icon" href="/src/assets/favicon.png" />
+  <link rel="stylesheet" href="/src/css/styles.css" />
+</head>
+<body>
+  <main class="auth-container">
+    <div class="auth-card">
+      <h2 class="auth-title">Let’s Get Started 👋</h2>
+      <p class="auth-subtitle">Tell us a bit about your academic journey</p>
+
+      <form class="auth-form">
+        <label for="faculty">Faculty</label>
+        <select id="faculty" required>
+          <option value="">Select Faculty</option>
+
+        </select>
+
+        <label for="department">Department</label>
+        <select id="department" required>
+          <option value="">Select Department</option>
+        </select>
+
+        <label for="level">Level</label>
+        <select id="level" required>
+          <option value="">Select Level</option>
+          <option>100</option>
+          <option>200</option>
+          <option>300</option>
+          <option>400</option>
+          <option>500</option>
+        </select>
+
+        <label for="semester">Semester</label>
+        <select id="semester" required>
+          <option value="">Select Semester</option>
+          <option>First Semester</option>
+          <option>Second Semester</option>
+        </select>
+
+        <button type="submit" class="primary-btn large">Continue</button>
+      </form>
+    </div>
+  </main>
+  <script type="module" src="/src/js/setup.js"></script>
+</body>
+</html>

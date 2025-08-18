@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Courses Setup – Learn</title>
+  <link rel="icon" href="/src/assets/favicon.png" />
+  <link rel="stylesheet" href="/src/css/styles.css" />
+</head>
+<body>
+  <main class="auth-container">
+    <div class="auth-card">
+      <h2 class="auth-title">Your Courses 📘</h2>
+      <p class="auth-subtitle">List all your current courses and their credit load</p>
+
+      <form class="auth-form" id="course-form">
+  <div class="course-block">
+    <label>Course Code</label>
+    <input type="text" placeholder="e.g. CSC101" required>
+
+    <label>Course Title</label>
+    <input type="text" placeholder="e.g. Introduction to Programming" required>
+
+    <label>Credit Load</label>
+    <input type="number" placeholder="e.g. 3" min="1" max="6" required>
+  </div>
+
+
+
+  <button type="button" class="secondary-btn" onclick="addCourseRow()">+ Add another course</button>
+  <button type="submit" class="primary-btn large">Continue</button>
+</form>
+
+    </div>
+  </main>
+
+  <script type="module" src="/src/js/setup-courses.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Me | Learn</title>
+  <link rel="icon" href="/src/assets/favicon.png" />
+  <link rel="stylesheet" href="/src/css/styles.css" />
+  
+</head>
+<body>
+  <!-- Top Navigation Bar -->
+  <nav class="top-nav">
+    <div class="nav-left">
+      <h2 class="logo">Learn</h2>
+    </div>
+    <div class="nav-right">
+      <a href="dashboard.html" class="nav-link">Dashboard</a>
+      <a href="planner.html" class="nav-link">Planner</a>
+      <a href="assignments.html" class="nav-link">Assignments</a>
+      <a href="gpa.html" class="nav-link">GPA</a>
+      <a href="me.html" class="nav-link active">Me</a>
+    </div>
+  </nav>
+
+  <main class="page-container">
+
+    <!-- User Info Card -->
+    <div class="user-card">
+      <img src="/src/assets/pro.png" alt="" class="user-img">
+      <div class="user-info">
+        <h2 class="user-name">&mdash;</h2>
+        <p class="user-level">Level: &mdash;</p>
+        <p class="user-department">Department: &mdash;</p>
+        <p class="user-semester">Semester: &mdash;</p>
+      </div>
+    </div>
+
+    <!-- Shortcuts Grid -->
+    <div class="tiles-grid">
+      <div class="tile" onclick="window.location.href='notes.html'">📂 Notes & Files</div>
+      <div class="tile" onclick="window.location.href='pomodoro.html'">⏱️ Pomodoro Timer</div>
+      <div class="tile" onclick="window.location.href='gpa-simulator.html'">📊 GPA Simulator</div>
+      <div class="tile" onclick="location.href='mailto:fopara045@gmail.com'">💬 Give Feedback</div>
+    </div>
+
+    <!-- Quote of the Day -->
+    <div class="quote-box">
+      <span class="daily-quote">Loading quote...</span>
+      <br><span class="quote-author"></span>
+    </div>
+
+    <!-- Bottom Action Buttons -->
+    <div class="action-buttons">
+      <button class="log-out" onclick="window.location.href='home.html'">Log Out</button>
+    </div>
+
+  </main>
+  <script type="module" src="/src/js/me.js"></script>
+</body>
+</html>

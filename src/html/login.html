@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login – Learn</title>
+  <link rel="icon" href="/src/assets/favicon.png" />
+  <link rel="stylesheet" href="/src/css/styles.css" />
+</head>
+<body>
+  <main class="auth-container">
+    <div class="auth-card">
+      <h2 class="auth-title">Welcome Back 👋</h2>
+      <p class="auth-subtitle">Log in to continue your journey</p>
+      <p class="hidden" id="message"></p>
+
+      <form class="auth-form" id="login-form">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="you@example.com" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="••••••••" required>
+
+        <a href="forgot-password.html" class="forgot-link">Forgot password?</a>
+
+        <button type="submit" class="primary-btn large">Login</button>
+      </form>
+
+      <p class="auth-footer">Don't have an account? <a href="signup.html">Sign up</a></p>
+    </div>
+  </main>
+  <script type="module" src="../js/auth.js"></script>
+</body>
+</html>

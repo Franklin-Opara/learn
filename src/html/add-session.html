@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add Study Session – Learn</title>
+  <link rel="icon" href="/src/assets/favicon.png" />
+  <link rel="stylesheet" href="/src/css/styles.css" />
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="top-nav">
+    <div class="nav-left">
+      <h2 class="logo">Learn</h2>
+    </div>
+    <div class="nav-right">
+      <a href="dashboard.html" class="nav-link">Dashboard</a>
+      <a href="planner.html" class="nav-link active">Planner</a>
+      <a href="assignments.html" class="nav-link">Assignments</a>
+      <a href="gpa.html" class="nav-link">GPA</a>
+      <a href="me.html" class="nav-link">Me</a>
+    </div>
+  </nav>
+
+  <main class="page-container">
+    <h1>Add Study Session</h1>
+    <form class="auth-form">
+      <div class="form-group">
+        <label for="course">Course</label>
+        <select id="course" name="course" required>
+          <option value="">Select course</option>
+          <option value="CSC201">CSC201 – Data Structures</option>
+          <option value="PHY202">PHY202 – Electromagnetism</option>
+          <!-- You can dynamically populate from user’s course list -->
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="topic">Topic</label>
+        <input type="text" id="topic" name="topic" placeholder="e.g. Recursion" required />
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="date">Date</label>
+          <input type="date" id="date" name="date" required />
+        </div>
+        <div class="form-group">
+          <label for="time">Time</label>
+          <input type="time" id="time" name="time" required />
+        </div>
+      </div>
+
+      <button type="submit" class="primary-btn">Save Session</button>
+    </form>
+  </main>
+  <script type="module" src="/src/js/planner.js"></script>
+</body>
+</html>

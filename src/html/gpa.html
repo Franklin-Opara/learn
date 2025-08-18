@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GPA Simulator – Learn</title>
+  <link rel="icon" href="/src/assets/favicon.png" />
+  <link rel="stylesheet" href="/src/css/styles.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="top-nav">
+    <div class="nav-left">
+      <h2 class="logo">Learn</h2>
+    </div>
+    <div class="nav-right">
+      <a href="dashboard.html" class="nav-link">Dashboard</a>
+      <a href="planner.html" class="nav-link">Planner</a>
+      <a href="assignments.html" class="nav-link">Assignments</a>
+      <a href="gpa.html" class="nav-link active">GPA</a>
+      <a href="me.html" class="nav-link">Me</a>
+    </div>
+  </nav>
+
+  <main class="page-container">
+    <h1>🎓 GPA Simulator</h1>
+
+    <form class="auth-form" id="gpa-form">
+      <!-- Course input rows -->
+      <div class="course-row">
+        <div class="course-info">
+          <p><strong></strong> – </p>
+          <span>Credit Load: </span>
+        </div>
+        <div class="grade-select">
+          <label for="grade2">Grade:</label>
+          <select id="grade2" name="grade2" required>
+            <option value="">--</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="F">F</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Add more courses here -->
+
+      <button type="submit" class="primary-btn">Calculate GPA</button>
+    </form>
+
+    <!-- GPA Result Display -->
+    <div class="gpa-result" id="gpa-result">
+      <h2>🎉 Estimated GPA: <span id="gpa-value">--</span></h2>
+    </div>
+  </main>
+  <script type="module" src="/src/js/gpa.js"></script>
+</body>
+</html>

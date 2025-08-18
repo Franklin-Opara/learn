@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pomodoro Timer | Learn</title>
+  <link rel="icon" href="/src/assets/favicon.png" />
+  <link rel="stylesheet" href="/src/css/styles.css" />
+  
+</head>
+<body>
+  <nav class="top-nav">
+    <div class="nav-left">
+      <h2 class="logo">Learn</h2>
+    </div>
+    <div class="nav-right">
+      <a href="dashboard.html" class="nav-link">Dashboard</a>
+      <a href="planner.html" class="nav-link">Planner</a>
+      <a href="assignments.html" class="nav-link">Assignments</a>
+      <a href="gpa.html" class="nav-link">GPA</a>
+      <a href="me.html" class="nav-link">Me</a>
+    </div>
+  </nav>
+
+  <main class="page-container pomodoro-page">
+    <h1 class="page-title">⏱️ Pomodoro Timer</h1>
+
+    <div class="mode-switch">
+        <button class="mode-btn active" data-mode="pomodoro">Pomodoro</button>
+        <button class="mode-btn" data-mode="short">Short Break</button>
+        <button class="mode-btn" data-mode="long">Long Break</button>
+    </div>
+
+    <div class="pomodoro-card">
+      <div class="timer-display" id="timer-display">25:00</div>
+    </div>
+    <div class="session-indicator">
+        <span id="session-label">Session: 1 (Pomodoro)</span>
+    </div>
+
+    <div class="pomodoro-buttons">
+        <button class="primary-btn" id="start-btn">Start</button>
+        <button class="primary-btn" id="reset-btn">Reset</button>
+    </div>
+    
+    <!-- Alarm sound -->
+    <audio id="alarm-audio" src="/src/assets/alarm.wav" preload="auto"></audio>
+  </main>
+  <script type="module" src="/src/js/pomodoro.js"></script>
+</body>
+</html>

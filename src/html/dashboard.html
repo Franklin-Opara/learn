@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard – Gradely</title>
+  <link rel="icon" href="/src/assets/favicon.png" />
+  <link rel="stylesheet" href="/src/css/styles.css" />
+</head>
+<body>
+  <nav class="top-nav">
+  <div class="nav-left">
+    <h2 class="logo">Learn</h2>
+  </div>
+  <div class="nav-right">
+    <a href="dashboard.html" class="nav-link active">Dashboard</a>
+    <a href="planner.html" class="nav-link">Planner</a>
+    <a href="assignments.html" class="nav-link">Assignments</a>
+    <a href="gpa.html" class="nav-link">GPA</a>
+    <a href="me.html" class="nav-link">Me</a>
+  </div>
+</nav>
+
+  <main class="dashboard-container">
+    <!-- 1. Welcome -->
+    <section class="welcome-section">
+      <h1>Welcome back 👋</h1>
+      <p>Stay on track with your studies today</p>
+    </section>
+
+    <!-- 2. Today's Plan -->
+    <section class="card-section">
+      <div class="card">
+        <h3>Today’s Study Plan</h3>
+        <p>No study session added yet</p>
+        <a href="#" class="card-link">+ Add Study Session</a>
+      </div>
+
+      <div class="card">
+        <h3>Upcoming Assignments</h3>
+        <p>You have 2 assignments due this week</p>
+        <a href="#" class="card-link">View Assignments</a>
+      </div>
+    </section>
+
+    <!-- 3. Quick Access -->
+    <section class="quick-section">
+      <h4>Quick Access</h4>
+      <div class="quick-buttons">
+        <a href="gpa.html" class="quick-btn">📈 GPA Simulator</a>
+        <a href="pomodoro.html" class="quick-btn">⏱️ Pomodoro Timer</a>
+        <a href="notes.html" class="quick-btn">📝 Notes & Files</a>
+        <a href="me.html" class="quick-btn">🙋 Me</a>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="/src/js/app.js"></script>
+</body>
+</html>
