@@ -1,27 +1,39 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
+// List all your HTML entry points here
+const htmlPages = [
+  'index.html',
+  'src/html/setup-courses.html',
+  'src/html/add-assignment.html',
+  'src/html/add-session.html',
+  'src/html/assignments.html',
+  'src/html/dashboard.html',
+  'src/html/forgot-password.html',
+  'src/html/gpa.html',
+  'src/html/home.html',
+  'src/html/login.html',
+  'src/html/me.html',
+  'src/html/notes.html',
+  'src/html/planner.html',
+  'src/html/pomodoro.html',
+  'src/html/setup-1.html',
+  'src/html/signup.html',
+];
+
 export default defineConfig({
+  base: './',
   build: {
     rollupOptions: {
-      input: {
-        main: resolve(__dirname, 'index.html'),
-        setupCourses: resolve(__dirname, 'src/html/setup-courses.html'),
-        addAssignment: resolve(__dirname, 'src/html/add-assignment.html'),
-        addSession: resolve(__dirname, 'src/html/add-session.html'),
-        assignments: resolve(__dirname, 'src/html/assignments.html'),
-        dashboard: resolve(__dirname, 'src/html/dashboard.html'),
-        forgotPassword: resolve(__dirname, 'src/html/forgot-password.html'),
-        gpa: resolve(__dirname, 'src/html/gpa.html'),
-        home: resolve(__dirname, 'src/html/home.html'),
-        login: resolve(__dirname, 'src/html/login.html'),
-        me: resolve(__dirname, 'src/html/me.html'),
-        notes: resolve(__dirname, 'src/html/notes.html'),
-        planner: resolve(__dirname, 'src/html/planner.html'),
-        pomodoro: resolve(__dirname, 'src/html/pomodoro.html'),
-        setup1: resolve(__dirname, 'src/html/setup-1.html'),
-        signup: resolve(__dirname, 'src/html/signup.html'),
-        // Add any other HTML pages here
+      input: htmlPages.reduce((entries, file) => {
+        // Output all HTML files to dist root
+        const name = file === 'index.html' ? 'index' : file.split('/').pop().replace('.html', '');
+        entries[name] = resolve(__dirname, file);
+        return entries;
+      }, {}),
+      output: {
+        entryFileNames: '[name].html',
+        assetFileNames: 'assets/[name]-[hash][extname]'
       }
     }
   }
