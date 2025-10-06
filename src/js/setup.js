@@ -3,11 +3,9 @@ import { auth, db } from "./firebase.js";
 import { onAuthStateChanged } from "firebase/auth";
 import { doc, updateDoc } from "firebase/firestore";
 
-// ...existing code...
-
 // Faculty → Department map
 const facultyDepartments = {
-  "Natural Sciences": [
+  "Natural & Applied Sciences": [
     "Computer Science", "Biological Sciences", "Biochemistry",
     "Pure and Applied Chemistry", "Pure and Applied Physics", "Software Engineering"
   ],

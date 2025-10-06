@@ -117,7 +117,7 @@ if (assignmentList) {
         `;
         assignmentList.appendChild(card);
       });
-      // Add delete event listeners
+      // Delete button
       assignmentList.querySelectorAll('.delete-btn').forEach(btn => {
         btn.addEventListener('click', async (e) => {
           const id = btn.getAttribute('data-id');

@@ -10,7 +10,7 @@ const quotes = [
   { text: "Quality is not an act, it is a habit.", author: "Aristotle" },
   { text: "The best way to get started is to quit talking and begin doing.", author: "Walt Disney" },
   { text: "Opportunities don't happen, you create them.", author: "Chris Grosser" },
-  { text: "Push yourself, because no one else is going to do it for you.", author: "Unknown" }
+  { text: "Push yourself, because no one else is going to do it for you.", author: "Winston Churchill" }
 ];
 
 function showDailyQuote() {

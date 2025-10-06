@@ -1,7 +1,7 @@
 import { auth, db } from "./firebase.js";
 import { doc, setDoc } from "firebase/firestore";
 
-// Handle dynamic course row addition
+
 window.addCourseRow = function () {
   const courseContainer = document.querySelector(".auth-form");
 
@@ -19,7 +19,7 @@ window.addCourseRow = function () {
     <input type="number" placeholder="e.g. 3" min="1" max="6" required>
   `;
 
-  // Insert above the buttons
+  
   const addButton = courseContainer.querySelector("button[type='button']");
   courseContainer.insertBefore(courseBlock, addButton);
 };

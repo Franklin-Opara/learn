@@ -45,7 +45,7 @@ function showNotes(user) {
       const id = docSnap.id;
       notesList.appendChild(renderNoteItem(note, id));
     });
-    // Add delete listeners
+    // Delete Notes
     notesList.querySelectorAll('.delete-note-btn').forEach(btn => {
       btn.addEventListener('click', async () => {
         const id = btn.getAttribute('data-id');

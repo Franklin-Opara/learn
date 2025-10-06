@@ -101,7 +101,7 @@ if (loginForm) {
       message.textContent = "Log in Successful";
       message.className = "success";
       setTimeout(() => {
-        window.location.href = "dashboard.html"; // Change this path if needed
+        window.location.href = "dashboard.html";
       }, 500);
     } catch (error) {
       message.textContent = `Unsuccessful ${error.message}`;
