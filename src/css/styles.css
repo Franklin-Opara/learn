@@ -273,7 +273,7 @@ body {
   border-color: #6052FF;
 }
 
-/* ========== Course Setup Specific ========== */
+/* ========== Course Setup ========== */
 
 .course-block {
   display: flex;
@@ -936,18 +936,17 @@ body {
   font-size: 3.5rem;
   font-weight: 600;
   color: #6052FF;
-  margin-bottom: 2rem;
   letter-spacing: 1px;
 }
 
-/* Use existing buttons but enhance them for this page */
+
 .pomodoro-buttons {
   display: flex;
   gap: 1rem;
   justify-content: center;
 }
 
-/* Optional: Darker text for better contrast */
+
 .btn-primary {
   background-color: #6052FF;
   color: #ffffff;

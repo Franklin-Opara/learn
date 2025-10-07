@@ -31,12 +31,12 @@ const facultyDepartments = {
   "Medical Sciences": ["Meedicine"]
 };
 
-// DOM references
+
 const facultySelect = document.getElementById("faculty");
 const departmentSelect = document.getElementById("department");
 const form = document.querySelector(".auth-form");
 
-// Populate faculty dropdown
+
 Object.keys(facultyDepartments).forEach((faculty) => {
   const option = document.createElement("option");
   option.value = faculty;
@@ -44,7 +44,7 @@ Object.keys(facultyDepartments).forEach((faculty) => {
   facultySelect.appendChild(option);
 });
 
-// Update departments when faculty changes
+
 facultySelect.addEventListener("change", (e) => {
   const selectedFaculty = e.target.value;
   departmentSelect.innerHTML = `<option value="">Select Department</option>`;
@@ -59,7 +59,7 @@ facultySelect.addEventListener("change", (e) => {
   }
 });
 
-// Handle form submission
+
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
@@ -73,7 +73,7 @@ form.addEventListener("submit", (e) => {
     return;
   }
 
-  // Get current user and save to Firestore
+
   onAuthStateChanged(auth, async (user) => {
     if (user) {
       try {
@@ -85,7 +85,7 @@ form.addEventListener("submit", (e) => {
           semester: selectedSemester
         });
 
-        // Redirect after successful save
+
         window.location.href = "setup-courses.html";
       } catch (err) {
         alert("Error saving profile: " + err.message);
