@@ -17,7 +17,8 @@ function showDailyQuote() {
   const quoteEl = document.querySelector('.daily-quote');
   const authorEl = document.querySelector('.quote-author');
   if (!quoteEl) return;
-  // Use the day of year to pick a quote
+
+  //quote selection based on day of year
   const now = new Date();
   const start = new Date(now.getFullYear(), 0, 0);
   const diff = now - start;
